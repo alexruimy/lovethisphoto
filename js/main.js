@@ -30,9 +30,7 @@ $(function() {
 
 			//console.log(data);
 
-			$('#image').fadeOut(200,function() {
-				$(this).attr("src",data.file).show();
-			});
+			$('#image').attr("src",data.file);
 			$('#ratingUp').empty().html(data.thumbsup + "%");
 			$('#ratingDown').empty().html(data.thumbsdown + "%");
 
